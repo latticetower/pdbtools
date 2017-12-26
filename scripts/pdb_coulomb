@@ -113,7 +113,7 @@ def main():
     for pdb_file in file_list:
 
         # Read in coordinates
-        coord, pKa, charge = cmdline.readPDB(pdb_file)
+        coord, pKa, charge = coulomb.readPDB(pdb_file)
         short_pdb = os.path.split(pdb_file)[-1][:-4]
 
         # Determine electrostatic energy, titrating over all relavent variables
